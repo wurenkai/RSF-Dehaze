@@ -12,7 +12,7 @@
 </p>
 
 
-***Note: Our paper is in the review stage. In the future, we will fully publicize our dataset and code. Stay tuned to our project! The project is continuously updated...***
+***Note: Our paper is in the review stage. In the future, we will fully publicize our dataset and code. Stay tuned to our project!***
 
 **0. Main Environments.**
 - python 3.8
@@ -20,4 +20,4 @@
 
 **1. Dataset acquisition and preparation** </br>
 
-Continuously updated...
+The project is continuously updated...
