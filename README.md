@@ -11,8 +11,12 @@
   </p>
 </p>
 
+## News🚀
+(2025.01.28) ***The paper has been accepted by 2025 IEEE International Conference on Robotics & Automation -- ICRA 2025***🔥🔥
 
-***Note: Our paper is in the review stage. In the future, we will fully publicize our dataset and code. Stay tuned to our project!***
+(2025.10.02) ***The first edition of our paper has been uploaded to arXiv*** 📃
+
+***Note: Our project is being sorted out and will be fully updated in the near future. Stay tuned to our project!***
 
 **0. Main Environments.**
 - python 3.8
