@@ -16,7 +16,7 @@
 
 (2025.10.02) ***The first edition of our paper has been uploaded to arXiv*** 📃
 
-***Note: Our project is being sorted out and will be fully updated in the near future. Stay tuned to our project!***
+***Note: Our project is in the process of being organized and will be fully updated soon (late March or early April). Stay tuned for our project!***
 
 **0. Main Environments.**
 - python 3.8
