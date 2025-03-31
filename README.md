@@ -12,11 +12,11 @@
 </p>
 
 ## News🚀
-(2025.01.28) ***The paper has been accepted by 2025 IEEE International Conference on Robotics & Automation -- ICRA 2025***🔥🔥
+(2025.03.31) ***The USRobot-Dehaze dataset and RSF-Dehaze code are publicly available***🔥🔥
+
+(2025.01.28) ***The paper has been accepted by 2025 IEEE International Conference on Robotics & Automation -- ICRA 2025***🔥
 
 (2025.10.02) ***The first edition of our paper has been uploaded to arXiv*** 📃
-
-***Note: Our project is in the process of being organized and will be fully updated soon (late March or early April). Stay tuned for our project!***
 
 **0. Main Environments.**
 - python 3.8
@@ -24,4 +24,36 @@
 
 **1. Dataset acquisition and preparation** </br>
 
-The project is continuously updated...
+You can get the USRobot-Dehaze dataset from that [link](https://drive.google.com/file/d/1Tl8o5z4k1z18ahW4KX12xdYZDYBsEhgH/view?usp=sharing).
+
+**2. dehazing with real values** </br>
+
+You can use the following command to dehaze test images in ./data:
+
+```
+python dehazing.py
+```
+
+**3. dehazing without real values** </br>
+If you want to test RSF-Dehaze on a image which does not have ground truth. You can use the following command:
+
+```
+python RW_dehazing.py
+```
+
+The only difference between two command is whether the program calculates PSNR and SSIM. We adhere to the baseline model--[YOLO](https://github.com/XLearning-SCU/2021-IJCV-YOLY), where the inference time is the rate of one iteration, and the number of iterations can be changed to improve efficiency.
+
+## Citation
+
+If you find RSF-Dehaze useful in your research, please consider citing:
+
+```
+@article{wu2024toward,
+  title={Toward Zero-Shot Learning for Visual Dehazing of Urological Surgical Robots},
+  author={Wu, Renkai and Wang, Xianjin and Liang, Pengchen and Zhang, Zhenyu and Chang, Qing and Tang, Hao},
+  journal={arXiv preprint arXiv:2410.01395},
+  year={2024}
+}
+```
+## Acknowledgement
+Thanks to [YOLO](https://github.com/XLearning-SCU/2021-IJCV-YOLY) for this outstanding work.
