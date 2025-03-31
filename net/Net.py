@@ -66,7 +66,6 @@ def enhance_low_variance_regions(image, window_size=65, variance_threshold=0.2, 
 
 
 def enhance_channel(channel, window_size, variance_threshold, detail_scale):
-    # 计算局部方差
     mean = F.avg_pool2d(channel.unsqueeze(1), window_size, stride=1, padding=window_size // 2).squeeze(1)
     mean_sq = F.avg_pool2d(channel.unsqueeze(1) ** 2, window_size, stride=1, padding=window_size // 2).squeeze(1)
     local_variance = mean_sq - mean ** 2
