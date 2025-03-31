@@ -1,59 +1,47 @@
-<p align="center">
-  <h1 align="center">Toward Zero-Shot Learning for Visual Dehazing of Urological Surgical Robots</h1>
-  <p align="center">
-    Renkai Wu, Xianjin Wang, Pengchen Liang, Zhenyu Zhang, Qing Chang* and Hao Tang*
-  </p>
-    <p align="center">
-      1. Department of Surgery, Shanghai Key Laboratory of Gastric Neoplasms, Shanghai Institute of Digestive Surgery, Ruijin Hospital, Shanghai Jiao Tong University School of Medicine</br>
-      2. National Key Laboratory for Multimedia Information Processing, School of Computer Science, Peking University</br>
-      3. Department of Urology, Ruijin Hospital, Shanghai Jiaotong University School of Medicine</br>
-      4. School of Intelligent Science and Technology, Nanjing University</br>
-  </p>
-</p>
+# You Only Look Yourself: Unsupervised and Untrained Single Image Dehazing Neural Network (YOLY) ![](https://visitor-badge.glitch.me/badge?page_id=XLearning-SCU.2021-IJCV-YOLY)
 
-## News🚀
-(2025.03.31) ***The USRobot-Dehaze dataset and RSF-Dehaze code are publicly available***🔥🔥
+Pytorch implementation for YOLY (IJCV 2021) [[paper](https://link.springer.com/article/10.1007/s11263-021-01431-5)]
 
-(2025.01.28) ***The paper has been accepted by 2025 IEEE International Conference on Robotics & Automation -- ICRA 2025***🔥
+## Dependencies
 
-(2025.10.02) ***The first edition of our paper has been uploaded to arXiv*** 📃
+* Python == 3.6.10
+* Pytorch == 1.1.0 
+* opencv-python == 3.4.2.16 
+* opencv-contrib-python == 3.4.2.16 
 
-**0. Main Environments.**
-- python 3.8
-- pytorch 1.12.0
+We also export our conda virtual environment as YOLY.yaml. You can use the following command to create the environment.
 
-**1. Dataset acquisition and preparation** </br>
+```bash
+conda env create -f YOLY.yaml
+```
 
-You can get the USRobot-Dehaze dataset from that [link](https://drive.google.com/file/d/1Tl8o5z4k1z18ahW4KX12xdYZDYBsEhgH/view?usp=sharing).
-
-**2. dehazing with real values** </br>
+## Demo
 
 You can use the following command to dehaze test images in ./data:
 
-```
+```bash
 python dehazing.py
 ```
 
-**3. dehazing without real values** </br>
-If you want to test RSF-Dehaze on a image which does not have ground truth. You can use the following command:
+If you want to test YOLY on a real world image which does not have ground truth. You can use the following command:
 
-```
+```bash
 python RW_dehazing.py
 ```
 
-The only difference between two command is whether the program calculates PSNR and SSIM. We adhere to the baseline model--[YOLO](https://github.com/XLearning-SCU/2021-IJCV-YOLY), where the inference time is the rate of one iteration, and the number of iterations can be changed to improve efficiency.
+The only difference between two command is whether the program calculates PSNR and SSIM.
 
 ## Citation
 
-If you find RSF-Dehaze useful in your research, please consider citing:
+If you find YOLY useful in your research, please consider citing:
 
 ```
-@article{wu2024toward,
-  title={Toward Zero-Shot Learning for Visual Dehazing of Urological Surgical Robots},
-  author={Wu, Renkai and Wang, Xianjin and Liang, Pengchen and Zhang, Zhenyu and Chang, Qing and Tang, Hao},
-  journal={arXiv preprint arXiv:2410.01395},
-  year={2024}
+@article{Li:2021kt,
+author = {Li, Boyun and Gou, Yuanbiao and Gu, Shuhang and Liu, Jerry Zitao and Zhou, Joey Tianyi and Peng, Xi},
+title = {{You Only Look Yourself: Unsupervised and Untrained Single Image Dehazing Neural Network}},
+journal = {International Journal of Computer Vision},
+year = {2021},
+pages = {1--14},
+month = mar
 }
 ```
-## Acknowledgement
-Thanks to [YOLO](https://github.com/XLearning-SCU/2021-IJCV-YOLY) for this outstanding work.
