@@ -26,7 +26,7 @@
 
 You can get the USRobot-Dehaze dataset from that [link](https://drive.google.com/file/d/1Tl8o5z4k1z18ahW4KX12xdYZDYBsEhgH/view?usp=sharing).
 
-**2. dehazing with real values** </br>
+**2. Dehazing with real values** </br>
 
 You can use the following command to dehaze test images in ./data:
 
@@ -34,7 +34,7 @@ You can use the following command to dehaze test images in ./data:
 python dehazing.py
 ```
 
-**3. dehazing without real values** </br>
+**3. Dehazing without real values** </br>
 If you want to test RSF-Dehaze on a image which does not have ground truth. You can use the following command:
 
 ```
