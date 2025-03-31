@@ -16,7 +16,7 @@
 
 (2025.01.28) ***The paper has been accepted by 2025 IEEE International Conference on Robotics & Automation -- ICRA 2025***🔥
 
-(2025.10.02) ***The first edition of our paper has been uploaded to arXiv*** 📃
+(2024.10.02) ***The first edition of our paper has been uploaded to arXiv*** 📃
 
 **0. Main Environments.**
 - python 3.8
