@@ -48,11 +48,13 @@ The only difference between two command is whether the program calculates PSNR a
 If you find RSF-Dehaze useful in your research, please consider citing:
 
 ```
-@article{wu2024toward,
+@inproceedings{wu2025toward,
   title={Toward Zero-Shot Learning for Visual Dehazing of Urological Surgical Robots},
   author={Wu, Renkai and Wang, Xianjin and Liang, Pengchen and Zhang, Zhenyu and Chang, Qing and Tang, Hao},
-  journal={arXiv preprint arXiv:2410.01395},
-  year={2024}
+  booktitle={2025 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={4070--4076},
+  year={2025},
+  organization={IEEE}
 }
 ```
 ## Acknowledgement
